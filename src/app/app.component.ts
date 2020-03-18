@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, AfterViewChecked } from '@angular/core';
+import { MenuComponent } from './components/menu/menu.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'EsercitazioneMilano2020';
+
+  currentSection: number = 1;
+
+  @ViewChild(MenuComponent)
+  menuComponentRef: MenuComponent;
+
+
 }
