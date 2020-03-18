@@ -10,8 +10,4 @@ export class AppComponent {
 
   currentSection: number = 1;
 
-  @ViewChild(MenuComponent)
-  menuComponentRef: MenuComponent;
-
-
 }
