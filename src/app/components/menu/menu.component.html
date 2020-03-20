@@ -1,8 +1,7 @@
 <ul>
-    <li *ngFor="let menuItem of menuItems">
+    <li *ngFor="let menuItem of menuItems" routerLink='{{menuItem.url}}' routerLinkActive="active">
         <span>
             {{menuItem.description}}
         </span>
-        <button (click)="selectMenuItem(menuItem.id)">></button>
     </li>
 </ul>

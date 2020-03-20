@@ -12,16 +12,16 @@ export class MenuComponent implements OnInit {
   selectMenuId: EventEmitter<number> = new EventEmitter()
 
   menuItems: MenuItem[] = [
-    {
-      id: 1, description: 'Home', selected: true
-    },
-    {
-      id: 2, description: 'Lista Videogiochi', selected: false
-    },
-    {
-      id: 3, description: 'Modifica', selected: false
-    }
-  ];
+      {
+        id: 1, description: 'Home', url: '/home'
+      },
+      {
+        id: 2, description: 'Lista Videogiochi', url: '/list'
+      },
+      {
+        id: 3, description: 'Modifica', url: '/edit'
+      }
+    ];
 
   constructor() { }
 
