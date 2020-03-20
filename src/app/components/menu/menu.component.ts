@@ -13,13 +13,13 @@ export class MenuComponent implements OnInit {
 
   menuItems: MenuItem[] = [
       {
-        id: 1, description: 'Home', url: '/home'
+        id: 1, description: 'Home', url: '/portale/home'
       },
       {
-        id: 2, description: 'Lista Videogiochi', url: '/list'
+        id: 2, description: 'Lista Videogiochi', url: '/portale/list'
       },
       {
-        id: 3, description: 'Modifica', url: '/edit'
+        id: 3, description: 'Modifica', url: '/portale/edit'
       }
     ];
 
