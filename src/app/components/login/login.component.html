@@ -1,9 +1,9 @@
 <div>
     <label>Username</label>
-    <input  #username type="text">
+    <input  #username type="text"  (keyup.enter)="login(username.value, password.value)">
 </div>
 <div>
     <label>Password</label>
-    <input #password type="password">
+    <input #password type="password" (keyup.enter)="login(username.value, password.value)">
 </div>
 <button (click)="login(username.value, password.value)">Login</button>
