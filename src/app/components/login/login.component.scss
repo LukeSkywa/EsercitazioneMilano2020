@@ -1,0 +1,31 @@
+.class1{
+    background-color: red;
+}
+
+.class1.class2{
+    color: red;
+}
+
+.class1 .class2{
+    color: red;
+}
+
+.class1>.class2{
+    color: red;
+}
+// la parte sotto è equivalente a quella sopra
+.class1{
+    background-color: red;
+
+    &.class2{
+        color:red;
+    }
+
+    .class2{
+        color:red;
+    }
+
+    >.class2{
+        color:red;
+    }
+}
